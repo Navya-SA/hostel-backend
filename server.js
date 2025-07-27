@@ -18,6 +18,12 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 // PostgreSQL Database Connection (Local)
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
 
 
 
