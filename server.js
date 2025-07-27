@@ -18,16 +18,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 // PostgreSQL Database Connection (Local)
-const pool = new Pool({
-  user: "neondb_owner",
-  host: "ep-fragrant-dream-a1vhrj8v-pooler.ap-southeast-1.aws.neon.tech",
-  database: "neondb",
-  password: "npg_b0mkhpEiF7de", 
-  port: 5432,
-  ssl: {
-    rejectUnauthorized: false
-  }
-});
+
 
 
 // Test Database Connection
